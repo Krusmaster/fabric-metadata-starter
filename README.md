@@ -56,6 +56,15 @@ job for six months. Before that they are decoration.
 pip install git+https://github.com/Krusmaster/fabric-metadata-starter
 ```
 
+## Works on
+
+| Platform | Status |
+| --- | --- |
+| Fabric | yes — generated notebooks target Fabric |
+| Databricks | model + validator yes; notebook templates need a Databricks variant |
+| Snowflake | model + validator yes; no templates |
+| Local Python | yes — validate and generate run anywhere |
+
 ## License
 
 MIT
