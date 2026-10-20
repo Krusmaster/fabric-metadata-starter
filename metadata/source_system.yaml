@@ -1,0 +1,5 @@
+# One row per source system. `type` picks the ingestion template.
+- id: sap_erp
+  type: datasphere          # datasphere | fabric_mirroring | sql_server_cdc | api
+  connection_ref: kv-sap-datasphere   # Key Vault secret name, never a connection string
+  cdc_style: log            # log | snapshot

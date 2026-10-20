@@ -1,0 +1,7 @@
+# One row per silver object: header + item(s) joined on key. Owner is a person, not a team.
+- id: sales_order
+  name: Sales Order
+  header: VBAK
+  items: [VBAP]
+  join_key: [MANDT, VBELN]
+  owner: sales-data-owner@example.com

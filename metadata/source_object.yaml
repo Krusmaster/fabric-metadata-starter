@@ -1,0 +1,19 @@
+# One row per source table. Drives bronze load + CDC collapse. No logic here, only names.
+- system_id: sap_erp
+  name: VBAK
+  business_key: [MANDT, VBELN]
+  order_col: _commit_ts
+  op_col: _op
+  active: true
+- system_id: sap_erp
+  name: VBAP
+  business_key: [MANDT, VBELN, POSNR]
+  order_col: _commit_ts
+  op_col: _op
+  active: true
+- system_id: sap_erp
+  name: KNA1
+  business_key: [MANDT, KUNNR]
+  order_col: _commit_ts
+  op_col: _op
+  active: false
